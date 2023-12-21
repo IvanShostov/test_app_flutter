@@ -19,7 +19,9 @@ class _IndicatorWidgetState extends State<IndicatorWidget> {
             ? width * 0.829
             : width * 0.835
         : width >= 350
-            ? width * 0.813
+            ? width >= 380
+                ? width * 0.82
+                : width * 0.812
             : width * 0.78;
 
     return Container(
